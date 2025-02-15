@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+:root {
+    --main-color: #fe5b3d;
+    --second-color: #ffac38;
+    --text-color:#444;
+    --gradient: linear-gradient(#fe5b3d, #ffac38);
+    --gradient2: linear-gradient(#ffffff, #000000);
+    --color-default: #fafafa;
+    --color-primary: #27a776;
+    --color-secondary: #161718;
+    --secondary-light: rgb(34, 124, 112, 0.2);
+    --shadow:0px 2px 8px 0px var(--secondary-light);
+
+}
+html::-webkit-scrollbar{
+    width: 0.5rem;   
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--color-secondary);
+    border-radius: 5rem;
+}
+/* section {
+    padding: 50px 100px;
+} */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    height: 50px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#cecece;
+    padding: 10px 100px;
+    font-size: 20px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    height: 55px;
+    justify-content: space-between;
+    background-color: rgba(210, 210, 210, 0);
+}
+.navbar{
+    margin-right: 50px;
+}
+.logo{
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+    font-weight: 5000;
+    word-spacing: 4px;
+}
+
+
+.topmenu a i {
+    margin-right: 8px;
+    color: black;
+    font-size: 1.5rem;
+}
+.text h1 a{
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'poppins';
+}
+.welcome a{
+    color: rgb(0, 0, 0);
+    font-family: 'poppins';
+    word-spacing: 2px;
+    font-weight: 600;
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+#user-dropdown-link i{
+    margin-left: 3px;
+}
+#user-content i{
+    margin-right: 5px;
+}
+.user-content{
+    display: none;
+    position: absolute;
+    right: 5px;
+    padding: 8px;
+    margin-top: 20px;
+    border: 1px solid #f6f6f6;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px var(--main-color); */
+    background: rgba(181, 181, 181, 0.164);
+    width: 250px;
+    z-index: -1;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.user-content a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 15px 15px;
+    letter-spacing: .5px;
+    display: block;
+}
+.user-content a:hover{
+    color: red;
+    text-decoration: underline;
+}
+body.scrolled .user-content a{
+    font-weight: 600;
+}
+body.scrolled .user-content{
+    background: #000000;
+}
+.tech-dropdown:hover .user-content{
+    display: block;
+}
+
+.cart-link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5rem;
+    margin-right: 25px;
+}
+.cart-link i{
+    color: white;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 0.8rem;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+
+.home{
+    width: 100%;
+    position: relative;
+    background: url(Car/Rentel/Website/Images/img/BG1.png);
+    background-repeat: repeat;
+    background-position: center right;
+    background-size: cover ;
+    display: flex;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+}
+/*body:not(.home) video{
+    display: none;
+}*/
+.text h1{
+    font-size: 5rem;
+    letter-spacing: 2px;
+    padding-top: 100px;
+}
+.lgt p1{
+    color: #ffffff;
+    font-weight: 400;
+}
+.lgt span{
+    font-family: 'cinzel-bold';
+    font-size: 65px;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 1px 4px 25px rgba(0, 0, 0, 0.1);
+}
+.text span{
+    color: #ffffff;
+    font-size: 8rem;
+    text-shadow: 10px 4px 41px rgba(0, 0, 0, 0.1);
+
+}
+.text h1{
+    color: #ffffff;
+    font-size: 79.50px;
+}
+.form-container form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: 4rem;
+    left: 100px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+.input-box{
+    flex: 1 1 7rem;
+    display: flex;
+    flex-direction: column;
+}
+.input-box span{
+    font-weight: 500;
+}
+.input-box input{
+    padding: 7px;
+    outline: none;
+    border: none;
+    background: #eeeff1;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+.form-container form .btn{
+    flex: 1 1 7rem;
+    padding: 10px 34px;
+    border-radius: 0.5rem;
+    background: #000000;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.form-container form .btn:hover{
+    background: #474fa0;
+    cursor: pointer;
+}
+.heading{
+    text-align: center;
+
+}
+/*.profile {
+    background: white;
+
+}*/
+.container{
+    width: 400px;
+    height: 500px;
+    background: rgba(0,0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 30px rgba(0,0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.view_all{
+    margin-right: 100px;
+    margin-bottom: 35px;
+    text-align: right;
+}
+.view_all a{
+    padding: 10px 18px 10px;
+    border-radius: 5px;
+    color: orangered;
+    border: 1px solid orangered;
+    transition: all 0.3s ease-in-out;
+}
+.view_all a:hover{
+    background: orangered;
+    color: white;
+}
+body.scrolled .view_all a{
+    color: orangered;
+}
+body.scrolled .view_all a:hover{
+    color: white;
+}
+
+.categories {
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 20px;
+    background-color: #f8f8f8;
+    transition: smooth;
+}
+
+.categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+body.scrolled #user-dropdown-link{
+    color: rgb(52, 52, 52);
+}
+body.scrolled .cart-link i{
+    color: rgb(52, 52, 52);
+}
+.category-box {
+    width: 275px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    /* padding: 10px; */
+    background-color: #0e0d0d;
+    transition: 0.3s;
+}
+
+.category-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.category-img img {
+    width: 274px;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.category-box h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+.add-to-cart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background: transparent;
+}
+.add-to-cart i{
+    color: white;
+    font-size: 20px;
+    transition: transform 0.4s;
+
+}
+
+.add-to-cart i:hover {
+    color: orangered;
+}
+
+.box {
+    position: relative;
+    /* Adjust padding and other styles for product box */
+}
+
+.pagination {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    align-items: center; /* Align items vertically */
+    margin: 20px 0; /* Add some margin above and below the pagination */
+}
+
+.pagination .btn {
+    margin: 0 10px; /* Space between buttons */
+    padding: 10px 20px; /* Padding for buttons */
+    background-color: #363636; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.pagination .btn:hover {
+    background-color: orangered; /* Darker background on hover */
+}
+
+.page-numbers {
+    margin: 0 15px; /* Space around page numbers */
+}
+
+.page-numbers a {
+    margin: 0 5px; /* Space between page number links */
+    padding: 10px; /* Padding for page number links */
+    text-decoration: none; /* Remove underline */
+    color: #000000; /* Link color */
+}
+
+.page-numbers a.active {
+    font-weight: bold; /* Highlight current page */
+    text-decoration: underline; /* Underline current page */
+    color: orangered; /* Change color for active page */
+}
+.btn.disabled {
+    background-color: #ccc; /* Gray background */
+    color: #4f4f4f; /* Darker gray text */
+    cursor: not-allowed; /* Change cursor to indicate it's not clickable */
+    pointer-events: none; /* Disable any mouse events */
+}
